@@ -20,7 +20,8 @@ body {
     background: url(./images/library.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    background-position: center center;
+    /* height: 100vh; */
     overflow-y: hidden;
 }
 header{
@@ -34,6 +35,7 @@ header{
 header > h1 > span, p{
     color: #40b611;
     font-weight: 700;
+
 }
 .black-text{
     color: #000;
@@ -46,17 +48,10 @@ footer{
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
-.container{
-    width: 550px;
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px auto;
-}
+
+
 .header-text{
     font-size: 1.2rem;
     color: azure;
@@ -112,4 +107,38 @@ footer{
     color: #40b611;
     font-size: 2rem;
     font-family: 'Metrophobic', sans-serif;
+}
+@media screen and (max-width: 768px){
+    .quote-container{
+        width: 90%;
+        height: 300px;
+        padding: 20px 20px;
+    }
+    .quote-container .quote-area{
+        font-size: 1.2rem;
+    }
+    .quote-container .author{
+        font-size: 1.4rem;
+
+    }
+    .container{
+        width: 90%;
+        height: 300px;
+        padding: 20px 20px;
+        display: inline;
+        flex-direction: column;
+    }
+    footer{
+        width: 100%;
+        height: 70px;
+        padding: 20px 20px;
+    }
+    .quote-container .new-quote > button{
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .new-quote > button:hover{
+        background-color: #262626;
+        color: azure;
+    }
 }
