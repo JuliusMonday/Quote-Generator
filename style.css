@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&family=Metrophobic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&family=Young+Serif&display=swap');
+/* FONTS TO SELECT
+font-family: 'Heebo', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Metrophobic', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Young Serif', serif;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    line-height: 24px;
+    /* color: #333333; */
+    background: url(./images/library.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-y: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+}
+header > h1 > span, p{
+    color: #40b611;
+    font-weight: 700;
+}
+.black-text{
+    color: #000;
+}
+.red-text{
+    color: #d85e5e;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    margin-top: 40px;
+}
+.container{
+    width: 550px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px auto;
+}
+.header-text{
+    font-size: 1.2rem;
+    color: azure;
+    border: 2px solid azure;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #262626;
+    text-align: center;
+    width: 80%;
+}
+.quote-container{
+    width: 100%;
+    height: 370px;
+    background-color: azure;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px 40px;
+    box-shadow: 0 0 10px;
+}
+.quote-container .quote-area{
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+.quote-container .author{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #40b611;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.quote-container .new-quote > button{
+    background-color: #40b611;
+    border: none;
+    border-radius: 5px;
+    color:azure;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.new-quote > button:hover{
+    background-color: #262626;
+    color: azure;
+}
+.new-quote > button:active{
+    background-color: #d85e5e;
+    color: azure;
+}
+.quotation1, .quotation2{
+    color: #40b611;
+    font-size: 2rem;
+    font-family: 'Metrophobic', sans-serif;
+}
